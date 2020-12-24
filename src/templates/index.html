@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chaka - Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/open-iconic-bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+	
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+
+	
+	<link rel="stylesheet" href="{{url_for('static',filename='css/aos.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/ionicons.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-datepicker.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/jquery.timepicker.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+
+  </head>
+  <body class="goto-here">
+	<div class="py-1 bg-black">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+		    			<div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">+51 934 477 384</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">chaka@gmail.com</span>
+					    </div>
+					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+						    <span class="text">Envíos a todo el Perú</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="/">Chaka</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="/Index/{{user[2]}}" class="nav-link">Inicio</a></li>
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogo</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="/Tienda/{{user[2]}}">Tienda</a>
+                <a class="dropdown-item" href="/Carrito/{{user[2]}}">Canasta</a>
+                <a class="dropdown-item" href="/Checkout/{{user[2]}}">Realizar pedido</a>
+              </div>
+            </li>
+	          <li class="nav-item active"><a href="/Acercade/{{user[2]}}" class="nav-link">Sobre nosotros</a></li>
+			  <li class="nav-item"><a href="/Contacto/{{user[2]}}" class="nav-link">Contacto</a></li>
+			  <li class="nav-item"><a href="/IniciarSesion/{{user[2]}}" class="nav-link">{{user[1]}}</a></li>
+	          <li class="nav-item cta cta-colored"><a href="/Carrito/{{user[2]}}" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section id="home-section" class="hero">
+		  <div class="home-slider owl-carousel">
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid p-0">
+	          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+	          	<img class="one-third order-md-last img-fluid" src="{{url_for('static',filename='images/fondo_cafe.png')}}" alt="">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '120%' }">
+		          	<div class="text">
+		          		<span class="subheading">#100%peruano</span>
+		          		<div class="horizontal">
+				            <h1 class="mb-4 mt-3">Catálogo de productos peruanos 2020</h1>
+				            <p class="mb-4">Desde la tierra a tus manos</p>
+				            
+				            <p><a href="#" class="btn-custom">¡Descúbrelo ahora!</a></p>
+				          </div>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid p-0">
+	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+	          	<img class="one-third order-md-last img-fluid" src="{{url_for('static',filename='images/fondo_torito.png')}}" alt="">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">#Nuevo #EnTemporada</span>
+		          		<div class="horizontal">
+				            <h1 class="mb-4 mt-3">Torito de Pucará</h1>
+				            <p class="mb-4">Disfruta de este torito. Una artesanía llena de misticismo y arte a base de arcilla. Un símbolo de protección, felicidad y fertilidad que puede estar al alcance de tus manos.</p>
+				            
+				            <p><a href="#" class="btn-custom">¡Descúbrelo ahora!</a></p>
+				          </div>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container">
+				<div class="row no-gutters ftco-services">
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            		<span class="flaticon-bag"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Productos de calidad</h3>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            		<span class="flaticon-customer-service"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Atención al cliente</h3>
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            		<span class="flaticon-payment-security"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Diferentes métodos de pago</h3>
+              </div>
+            </div>      
+          </div>
+        </div>
+			</div>
+		</section>
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+				<div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Novedades</h2>
+            <p>Te contamos que tenemos de nuevo en nuestra tienda</p>
+          </div>
+        </div>   		
+    	</div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+    				<div class="product d-flex flex-column">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="{{url_for('static',filename='images/chalina.png')}}" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3">
+    						<div class="d-flex">
+    							<div class="cat">
+		    						<span>Textiles</span>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right mb-0">
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    							</p>
+	    						</div>
+	    					</div>
+    						<h3><a href="#">Chalina de alpaca</a></h3>
+    						<div class="pricing">
+	    						<p class="price"><span>S/. 80.00</span></p>
+	    					</div>
+	    					<p class="bottom-area d-flex px-3">
+    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir a carrito<i class="ion-ios-add ml-1"></i></span></a>
+    							<a href="#" class="buy-now text-center py-2">Comprar ahora<span><i class="ion-ios-cart ml-1"></i></span></a>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+    				<div class="product d-flex flex-column">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="{{url_for('static',filename='images/poncho.png')}}" alt="Colorlib Template">
+    						<span class="status">50% Off</span>
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3">
+    						<div class="d-flex">
+    							<div class="cat">
+		    						<span>Textiles</span>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right mb-0">
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    							</p>
+	    						</div>
+	    					</div>
+    						<h3><a href="#">Poncho de alpaca</a></h3>
+  							<div class="pricing">
+	    						<p class="price"><span class="mr-2 price-dc">S/. 160.00</span><span class="price-sale">S/. 80.00</span></p>
+	    					</div>
+	    					<p class="bottom-area d-flex px-3">
+    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir a carrito<i class="ion-ios-add ml-1"></i></span></a>
+    							<a href="#" class="buy-now text-center py-2">Comprar ahora<span><i class="ion-ios-cart ml-1"></i></span></a>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="{{url_for('static',filename='images/torito.png')}}" alt="Colorlib Template">
+	    					<div class="overlay"></div>
+	    				</a>
+    					<div class="text py-3 pb-4 px-3">
+    						<div class="d-flex">
+    							<div class="cat">
+		    						<span>Artesanía</span>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right mb-0">
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    							</p>
+	    						</div>
+	    					</div>
+    						<h3><a href="#">Torito de Pucará</a></h3>
+  							<div class="pricing">
+	    						<p class="price"><span>S/. 120.00</span></p>
+	    					</div>
+	    					<p class="bottom-area d-flex px-3">
+    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir a carrito<i class="ion-ios-add ml-1"></i></span></a>
+    							<a href="#" class="buy-now text-center py-2">Comprar ahora<span><i class="ion-ios-cart ml-1"></i></span></a>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="{{url_for('static',filename='images/cafe.jpg')}}" alt="Colorlib Template">
+    						<div class="overlay"></div>
+    					</a>
+    					<div class="text py-3 pb-4 px-3">
+    						<div class="d-flex">
+    							<div class="cat">
+		    						<span>Orgánicos</span>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right mb-0">
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    								<a href="#"><span class="ion-ios-star-outline"></span></a>
+	    							</p>
+	    						</div>
+	    					</div>
+    						<h3><a href="#">Café de Moyobamba</a></h3>
+  							<div class="pricing">
+	    						<p class="price"><span>S/. 40.00</span></p>
+	    					</div>
+	    					<p class="bottom-area d-flex px-3">
+    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Añadir a carrito<i class="ion-ios-add ml-1"></i></span></a>
+    							<a href="#" class="buy-now text-center py-2">Comprar ahora<span><i class="ion-ios-cart ml-1"></i></span></a>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-deal bg-primary">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<img src="{{url_for('static',filename='images/poncho.png')}}" class="img-fluid" alt="">
+    			</div>
+    			<div class="col-md-6">
+    				<div class="heading-section heading-section-white">
+    					<span class="subheading">Oferta del mes</span>
+	            <h2 class="mb-3">¡Aprovecha la promoción!</h2>
+	          </div>
+    				<div id="timer" class="d-flex mb-4">
+						  <div class="time" id="días"></div>
+						  <div class="time pl-4" id="horas"></div>
+						  <div class="time pl-4" id="minutos"></div>
+						  <div class="time pl-4" id="segundos"></div>
+						</div>
+						<div class="text-deal">
+							<h2><a href="#">Poncho de alpaca</a></h2>
+							<p class="price"><span class="mr-2 price-dc">S/. 160.00</span><span class="price-sale">S/. 80.00</span></p>
+						</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section testimony-section">
+		<div class="container">
+		  <div class="row">
+			  <div class="col-lg-5">
+				  <div class="services-flow">
+					  <div class="services-2 p-4 d-flex ftco-animate">
+						  <div class="icon">
+							  <span class="flaticon-bag"></span>
+						  </div>
+						  <div class="text">
+							  <h3>Primer envío gratis</h3>
+							  <p class="mb-0">Premiamos tu primera experiencia con nosotros</p>
+						  </div>
+					  </div>
+					  <div class="services-2 p-4 d-flex ftco-animate">
+						  <div class="icon">
+							  <span class="flaticon-heart-box"></span>
+						  </div>
+						  <div class="text">
+							  <h3>Productos Únicos</h3>
+							  <p class="mb-0">Tenemos una variedad de productos de artesanía, textiles y productos frescos que no encontrarás en otro lugar.</p>
+						  </div>
+					  </div>
+					  <div class="services-2 p-4 d-flex ftco-animate">
+						  <div class="icon">
+							  <span class="flaticon-payment-security"></span>
+						  </div>
+						  <div class="text">
+							  <h3>Seguridad de compras</h3>
+							  <p class="mb-0">Contamos con los mejores servicios para proteger tus datos personales</p>
+						  </div>
+					  </div>
+					  <div class="services-2 p-4 d-flex ftco-animate">
+						  <div class="icon">
+							  <span class="flaticon-customer-service"></span>
+						  </div>
+						  <div class="text">
+							  <h3>Atención todo el día</h3>
+							  <p class="mb-0">Se cuenta con el servicio para recibir pedidos a cualquier hora del día</p>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			<div class="col-lg-7">
+				<div class="heading-section ftco-animate mb-5">
+				  <h2 class="mb-4">Nuestros clientes</h2>
+				  <p>Algunos testimonios de nuestros clientes</p>
+				</div>
+			  <div class="carousel-testimony owl-carousel ftco-animate">
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="user-img mb-4" style="background-image: url(/static/images/P2.jpg)">
+					  <span class="quote d-flex align-items-center justify-content-center">
+						<i class="icon-quote-left"></i>
+					  </span>
+					</div>
+					<div class="text">
+					  <p class="mb-4 pl-4 line">Pertenecer a Chaka cambió la experiencia de mi negocio para siempre. La flexibilidad y el número de clientes que obtuve es increíble. </p>
+					  <p class="name">Maria Huaray</p>
+					  <span class="position">Dueña de Maskhay</span>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="user-img mb-4" style="background-image: url(/static/images/P4.jpg)">
+					  <span class="quote d-flex align-items-center justify-content-center">
+						<i class="icon-quote-left"></i>
+					  </span>
+					</div>
+					<div class="text">
+					  <p class="mb-4 pl-4 line">Soy un artesano ayacuchano que aprendió el arte de la cerámica gracias a mi trascendencia familiar. Gracias a Chaka, logré hacer mi trabajo conocido y logré obtener un título de Gran Maestro Artesano 2020</p>
+					  <p class="name">Virgilio Oré Chávez</p>
+					  <span class="position">Artesano de Ayacucho</span>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					  
+					<div class="user-img mb-4" style="background-image: url(/static/images/P1.jpg)">
+					  <span class="quote d-flex align-items-center justify-content-center">
+						<i class="icon-quote-left"></i>
+					  </span>
+					</div>
+					<div class="text">
+					  <p class="mb-4 pl-4 line">La calidad de productos de Chaka me ha permitido conocer mejor mi país y su diversidad de productos agrícolas y textiles.</p>
+					  <p class="name">Camila Rios</p>
+					  <span class="position">Cliente de Chaka</span>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="user-img mb-4" style="background-image: url(/static/images/P5.jpg)">
+					  <span class="quote d-flex align-items-center justify-content-center">
+						<i class="icon-quote-left"></i>
+					  </span>
+					</div>
+					<div class="text">
+					  <p class="mb-4 pl-4 line">Soy un agricultor de Moyobamba y he conseguido importar el café que produzco a distintos departamentos de Lima</p>
+					  <p class="name">Gabriel Ataucusi Flores</p>
+					  <span class="position">Agricultor</span>
+					</div>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="testimony-wrap">
+					<div class="user-img mb-4" style="background-image: url(/static/images/P3.jpg)">
+					  <span class="quote d-flex align-items-center justify-content-center">
+						<i class="icon-quote-left"></i>
+					  </span>
+					</div>
+					<div class="text">
+					  <p class="mb-4 pl-4 line">Desde que comenzó Chaka, he podido obtener productos que tanto me gustan pero no puedo conseguir en el departamento donde vivo. Cuando Chaka apareció e hice mi primer pedido, abrió las puertas a conseguir dulces Arequipeños cada cuanto se me antoja comer alguno.</p>
+					  <p class="name">Manuel Salas</p>
+					  <span class="position">Cliente de Chaka</span>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+  
+	  <section class="ftco-gallery">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-md-8 heading-section text-center mb-4 ftco-animate">
+			  <h2 class="mb-4">Síguenos en nuestras redes sociales</h2>
+			  <p>Instagram: @Chaka.pe</p>
+			  <p>Facebook: Chaka.pe</p>
+			</div>
+			  </div>
+		  </div>
+		  <div class="container-fluid px-0">
+			  <div class="row no-gutters">
+					  <div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer1.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer1.jpg);">
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+					  </div>
+					  <div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer2.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer2.jpg);"></a>
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+					  </div>
+					  <div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer3.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer3.jpg);"></a>
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+					  </div>
+					  <div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer4.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer4.jpg);"></a>
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+			</div>
+			<div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer1.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer1.jpg);"></a>
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+					  </div>
+					  <div class="col-md-4 col-lg-2 ftco-animate">
+						  <a href="{{url_for('static',filename='images/footer2.png')}}" class="gallery image-popup img d-flex align-items-center" style="background-image: url(/static/images/footer2.jpg);"></a>
+							  <div class="icon mb-4 d-flex align-items-center justify-content-center">
+							  <span class="icon-instagram"></span>
+						  </div>
+						  </a>
+					  </div>
+		  </div>
+		  </div>
+	  </section>
+  
+	  <footer class="ftco-footer ftco-section">
+			  <div class="container">
+				  <div class="row">
+					  <div class="mouse">
+								<a href="#" class="mouse-icon">
+									<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+								</a>
+							</div>
+				  </div>
+				<div class="row mb-5">
+				  <div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+					  <h2 class="ftco-heading-2">Chaka</h2>
+					  <p>Creamos obras maestras, creamos vínculos</p>
+					  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-5">
+					  <h2 class="ftco-heading-2">Menu</h2>
+					  <ul class="list-unstyled">
+						<li><a href="#" class="py-2 d-block">Tienda</a></li>
+						<li><a href="#" class="py-2 d-block">Acerca de nosotros</a></li>
+						<li><a href="#" class="py-2 d-block">Blog</a></li>
+						<li><a href="#" class="py-2 d-block">Contáctanos</a></li>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="col-md-4">
+					 <div class="ftco-footer-widget mb-4">
+					  <h2 class="ftco-heading-2">Ayuda</h2>
+					  <div class="d-flex">
+						  <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+							<li><a href="#" class="py-2 d-block">Información de Envíos</a></li>
+							<li><a href="#" class="py-2 d-block">Devoluciones y cambios</a></li>
+							<li><a href="#" class="py-2 d-block">Términos &amp; Condiciones</a></li>
+							<li><a href="#" class="py-2 d-block">Políticas de Privacidad</a></li>
+						  </ul>
+						  <ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">FAQs</a></li>
+							<li><a href="#" class="py-2 d-block">Contáctanos</a></li>
+						  </ul>
+						</div>
+					</div>
+				  </div>
+				  <div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">¿Tienes alguna consulta?</h2>
+						<div class="block-23 mb-3">
+						  <ul>
+							<li><span class="icon icon-map-marker"></span><span class="text">Av Juan de Arona 755, Lima 15046</span></li>
+							<li><a href="#"><span class="icon icon-phone"></span><span class="text">+51 934 477 384</span></a></li>
+							<li><a href="#"><span class="icon icon-envelope"></span><span class="text">chaka@gmail.com</span></a></li>
+						  </ul>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-md-12 text-center">
+		
+		
+								</p>
+				  </div>
+				</div>
+			  </div>
+			</footer>    
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/aos.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.animateNumber.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+  <script src="{{url_for('static',filename='js/scrollax.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/google-map.js')}}"></script>
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    
+  </body>
+</html>
